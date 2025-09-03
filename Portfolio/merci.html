@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci pour votre message - Youcef Nassim</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .thank-you-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-color);
+        }
+        
+        .thank-you-icon {
+            font-size: 8rem;
+            color: var(--main-color);
+            margin-bottom: 2rem;
+            animation: bounce 1s infinite alternate;
+        }
+        
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        
+        .thank-you-title {
+            font-size: 4rem;
+            color: var(--main-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .thank-you-message {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+        
+        .thank-you-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1.2rem 2.5rem;
+            background: var(--main-color);
+            color: var(--bg-color);
+            border-radius: 0.6rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        
+        .thank-you-btn:hover {
+            background: var(--text-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-title {
+                font-size: 3rem;
+            }
+            
+            .thank-you-message {
+                font-size: 1.6rem;
+            }
+            
+            .thank-you-icon {
+                font-size: 6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <i class='bx bx-check-circle thank-you-icon'></i>
+        <h1 class="thank-you-title">Message envoyé avec succès !</h1>
+        <p class="thank-you-message">Merci de m'avoir contacté. Je vous répondrai dans les plus brefs délais. En attendant, n'hésitez pas à explorer mes autres projets.</p>
+        <a href="index.html" class="thank-you-btn">
+            <i class='bx bx-home'></i> Retour à l'accueil
+        </a>
+    </div>
+</body>
+</html>
